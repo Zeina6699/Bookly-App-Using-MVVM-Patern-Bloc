@@ -22,14 +22,14 @@ class _SplashViewBodyState extends State<SplashViewBody>with SingleTickerProvide
     super.initState();
 
     InitSlidingAnimation();
-    
+
     navigateToHome();
 
   }
 
   void navigateToHome() {
-      Future.delayed(const Duration(seconds: 5),(){
-      Get.to(()=>HomePage(),transition:Transition.fade,duration:Duration(seconds: 5));
+      Future.delayed(const Duration(seconds:4),(){
+      Get.to(()=>HomePage(),transition:Transition.fade,duration:Duration(milliseconds: 500));
     });
   }
 
